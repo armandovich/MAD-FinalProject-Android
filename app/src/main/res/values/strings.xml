@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">FinalProyectApp</string>
+    <string name="todo">TODO</string>
+    <string name="extra">extra</string>
+    <string name="sample_question">1. How many computer languages are in use?</string>
+    <string name="sample_answer1">2000</string>
+    <string name="sample_answer2">5000</string>
+    <string name="sample_answer3">50</string>
+    <string name="sample_answer4">20</string>
+    <string name="results">RESULTS</string>
+    <string name="score">Your Score is:</string>
+    <string name="sample_score">9999</string>
 </resources>

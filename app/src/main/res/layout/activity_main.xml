@@ -4,4 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/start"
+        android:layout_width="333dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="52dp"
+        android:contentDescription="@string/extra"
+        android:onClick="setStart"
+        android:scaleType="fitCenter"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/startbutton"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="247dp"
+        android:layout_height="256dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="174dp"
+        android:contentDescription="@string/extra"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
