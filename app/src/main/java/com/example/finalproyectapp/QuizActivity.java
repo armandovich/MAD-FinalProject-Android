@@ -17,7 +17,9 @@ public class QuizActivity extends AppCompatActivity {
     ImageView questionImage;
     TextView questionText;
     RadioGroup radioGroup;
-    Button nextButton;
+    Button nextBtn;
+    Button prevBtn;
+    Button submitBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,9 @@ public class QuizActivity extends AppCompatActivity {
         questionImage = findViewById(R.id.questionImage);
         questionText = findViewById(R.id.questionText);
         radioGroup = findViewById(R.id.radioGroup);
-        nextButton = findViewById(R.id.nextBtn);
+        nextBtn = findViewById(R.id.nextBtn);
+        prevBtn = findViewById(R.id.prevBtn);
+        submitBtn = findViewById(R.id.submitBtn);
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

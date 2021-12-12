@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="339dp"
-        android:layout_height="554dp"
+        android:layout_height="wrap_content"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -22,7 +22,7 @@
             android:id="@+id/questionImage"
             android:layout_width="178dp"
             android:layout_height="165dp"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="10dp"
             android:contentDescription="@string/extra"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -35,11 +35,13 @@
             android:id="@+id/radioGroup"
             android:layout_width="301dp"
             android:layout_height="248dp"
+            android:layout_marginTop="5dp"
             android:layout_marginBottom="9dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/questionText">
 
             <RadioButton
                 android:id="@+id/radioButton1"
@@ -72,12 +74,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="19dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="36dp"
             android:layout_marginBottom="21dp"
             android:text="@string/sample_question"
             app:layout_constraintBottom_toTopOf="@+id/radioGroup"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/questionImage" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
