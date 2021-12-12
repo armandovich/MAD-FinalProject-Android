@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
@@ -16,7 +17,7 @@ public class QuizActivity extends AppCompatActivity {
     ImageView questionImage;
     TextView questionText;
     RadioGroup radioGroup;
-    ImageButton nextButton;
+    Button nextButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class QuizActivity extends AppCompatActivity {
         questionImage = findViewById(R.id.questionImage);
         questionText = findViewById(R.id.questionText);
         radioGroup = findViewById(R.id.radioGroup);
-        nextButton = findViewById(R.id.nextButton);
+        nextButton = findViewById(R.id.nextBtn);
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
