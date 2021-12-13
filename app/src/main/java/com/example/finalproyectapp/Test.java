@@ -3,14 +3,18 @@ package com.example.finalproyectapp;
 import java.util.ArrayList;
 
 public class Test {
+    // Create question list
     private ArrayList<Question> questions = new ArrayList<>();
+    // Create selected answer list
     private ArrayList<Integer> selections = new ArrayList<>();
 
+    // Constructor
     public Test() {
         CreateQuestions();
         PicFivekQuestions();
     }
 
+    // Getter and Setters
     public ArrayList<Question> getQuestions() {
         return questions;
     }
@@ -27,6 +31,7 @@ public class Test {
         this.selections = selections;
     }
 
+    // Create questions
     private void CreateQuestions() {
         ArrayList<String> answerQ1 = new ArrayList<>();
         answerQ1.add("Stephen Fry");
@@ -113,27 +118,35 @@ public class Test {
         questions.add(new Question(R.drawable.twelve, "What language are iOS apps coded in??", answerQ12, 0));
     }
 
+    // Pick 5 random questions
     public void PicFivekQuestions() {
+        // Pick a random index
         int number = (int) (Math.random() * (questions.size() - 0) + 0);
 
+        // If index is not duplicated save it
         if(!selections.contains(number)) {
             selections.add(number);
         }
 
+        // Check if we alredt pick 5 questions
         if (selections.size() < 5) {
+            // Recursive function to pick next question
             PicFivekQuestions();
         }
     }
 
+    // Reset question list
     public void ResetTest() {
         selections.clear();
         PicFivekQuestions();
     }
 
+    // Get question by index
     public Question GetQuestion(int number) {
         return questions.get(selections.get(number));
     }
 
+    // Check if answer is correct
     public boolean CheckAnswer(int number, int answer) {
         return questions.get(selections.get(number)).getAnswer() == answer;
     }

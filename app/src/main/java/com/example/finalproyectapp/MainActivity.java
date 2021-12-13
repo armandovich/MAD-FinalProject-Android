@@ -10,15 +10,14 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        start = findViewById(R.id.start);
     }
 
+    // Start quiz
     public void setStart(View view) {
         Intent intent = new Intent(MainActivity.this, QuizActivity.class);
         startActivity(intent);

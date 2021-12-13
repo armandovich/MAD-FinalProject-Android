@@ -8,6 +8,7 @@ public class Question {
     private ArrayList<String> options = new ArrayList<>();
     private int answer;
 
+    // Constructor
     public Question(int image, String description, ArrayList<String> options, int answer) {
         this.image = image;
         this.description = description;
@@ -15,6 +16,7 @@ public class Question {
         this.answer = answer;
     }
 
+    // Getters and Setters
     public int getImage() {
         return image;
     }
