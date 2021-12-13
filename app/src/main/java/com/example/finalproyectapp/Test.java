@@ -3,8 +3,8 @@ package com.example.finalproyectapp;
 import java.util.ArrayList;
 
 public class Test {
-    private ArrayList<Question> questions;
-    private ArrayList<Integer> selections;
+    private ArrayList<Question> questions = new ArrayList<>();
+    private ArrayList<Integer> selections = new ArrayList<>();
 
     public Test() {
         CreateQuestions();
